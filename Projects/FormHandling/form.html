@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Handling</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Enquiry Form</h1>
+    <div
+      style="display: flex; justify-content: center; border: 1px solid black"
+    >
+      <br />
+      <br />
+      <div>
+        <form action="./form.php" method="post">
+          <br />
+          <input type="text" name="name" placeholder="Enter your name" />
+          <br />
+          <br />
+          <input type="email" name="email" placeholder="Enter your email" />
+          <br />
+          <br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <br />
+          <br />
+          <input type="checkbox" name="skills[]" value="php" /><span>PhP</span>
+          <br />
+          <input type="checkbox" name="skills[]" value="javascript" /><span
+            >Javascript</span
+          >
+          <br />
+          <input type="checkbox" name="skills[]" value="cpp" /><span>Cpp</span>
+          <br />
+          <input type="checkbox" name="skills[]" value="java" /><span
+            >Java</span
+          >
+          <br />
+          <br />
+          <input type="radio" name="gender" value="male" /><span>Male</span>
+          <br />
+          <input type="radio" name="gender" value="female" /><span>Female</span>
+          <br />
+          <br />
+        <select name="city">
+    <option value="" disabled selected>Select your city</option>
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="delhi">Delhi</option>
+    <option value="bangalore">Bangalore</option>
+</select>
+
+          <br />
+          <br />
+          <textarea name="bio" required></textarea>
+          <br />
+          <br />
+          <button name="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
